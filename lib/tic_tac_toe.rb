@@ -1,9 +1,15 @@
 require 'pry'
 
 class TicTacToe
+<<<<<<< HEAD
     
   def initialize
     @board = Array.new(9, " ")
+=======
+  attr_accessor :game, :play
+  def initialize(board = nil)
+    @board = board || Array.new(9, " ")
+>>>>>>> f1dcacc57f9b5e100152d84d52d4d1ea99751947
   end
   
   # 0 1 2 
@@ -19,8 +25,12 @@ class TicTacToe
     [2,5,8],
     [0,4,8],
     [6,4,2]]
+<<<<<<< HEAD
 
   
+=======
+    
+>>>>>>> f1dcacc57f9b5e100152d84d52d4d1ea99751947
   def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
     puts "-----------"
